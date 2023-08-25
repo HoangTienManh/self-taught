@@ -20,22 +20,6 @@ a {
   text-decoration: none;
 }
 
-.btn-link {
-  display: inline-block;
-  padding: 1rem 2.5rem;
-  border-radius: 4rem;
-  text-transform: uppercase;
-  font-size: 1.2rem;
-}
-
-.btn-link:hover {
-  transform: translateY(-3px);
-}
-
-.btn-link:active {
-  transform: translateY(3px);
-}
-
 @keyframes down-to {
   0% {
     opacity: 0;
@@ -70,7 +54,48 @@ a {
     transform: translateX(0);
   }
 }
-header {
+.header__button {
+  margin-top: 4rem;
+  animation: down-to 2s;
+}
+
+.header__button:hover::after {
+  transform: scaleX(1.5) scaleY(1.6);
+  opacity: 0;
+}
+
+.header__button:hover {
+  transform: translateY(-3px);
+}
+
+.header__button:active {
+  transform: translateY(3px);
+}
+
+.button-link {
+  padding: 1rem 2.5rem;
+  border-radius: 4rem;
+  background-color: #fff;
+  color: #777;
+  font-size: 1.2rem;
+  display: inline-block;
+  position: relative;
+}
+
+.button-link::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  border-radius: 4rem;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.header {
   background-image: linear-gradient(to right bottom, rgba(142, 158, 252, 0.8), rgba(28, 62, 255, 0.8)), url(../img/bg.jpg);
   background-position: top;
   background-size: cover;
@@ -78,18 +103,18 @@ header {
   position: relative;
   clip-path: ellipse(60% 60% at 50% 33%);
 }
-header .header__logo {
+.header__logo {
   position: absolute;
   top: 30px;
   left: 30px;
   width: 10rem;
   height: 5rem;
 }
-header .header__logo img {
+.header__logo img {
   width: 100%;
   height: 100%;
 }
-header .header__content {
+.header__content {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -97,40 +122,17 @@ header .header__content {
   text-align: center;
   color: #fff;
 }
-header .header__content .main {
+.header__content .main {
   font-size: 5rem;
   font-weight: 400;
   letter-spacing: 1.2rem;
   animation: left-to 2s;
 }
-header .header__content .sub {
+.header__content .sub {
   font-size: 1.6rem;
   font-weight: 700;
   letter-spacing: 1rem;
   animation: right-to 2s;
-}
-header .header__content .header-btn {
-  background-color: #fff;
-  color: #777;
-  margin-top: 4rem;
-  position: relative;
-  animation: down-to 2s;
-}
-header .header__content .header-btn::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  border-radius: 4rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all 0.4s;
-}
-header .header__content .header-btn:hover::after {
-  transform: scaleX(1.4) scaleY(1.5);
-  opacity: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

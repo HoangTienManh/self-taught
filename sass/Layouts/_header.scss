@@ -1,0 +1,45 @@
+
+.header {
+    background-image: 
+    linear-gradient(to right bottom, $light-blue-gradient, $blue-gradient), url(../img/bg.jpg);
+    background-position: top;
+    background-size: cover;
+    height: 90vh;
+    position: relative;
+    clip-path: ellipse(60% 60% at 50% 33%);
+
+    &__logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        width: 10rem;
+        height: 5rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -80%);
+        text-align: center;
+        color: $text-white;
+
+        .main {
+            font-size: 5rem;
+            font-weight: 400;
+            letter-spacing: 1.2rem;
+            animation: left-to 2s;
+        }
+        .sub {
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: 1rem;
+            animation: right-to 2s;
+        }
+    }
+}
