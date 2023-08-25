@@ -1,0 +1,89 @@
+@import "./base/reset.scss";
+@import "./component/button.scss";
+@import "./animation/animation.scss";
+
+// COLOR
+$blue: #1c3eff;
+$light-blue: #8e9efc;
+$blue-gradient: rgba(28, 62, 255, 0.8);
+$light-blue-gradient: rgba(142, 158, 252, 0.8);
+$text-grey: #777;
+$text-white: #fff;
+
+// === end - GLOBAL ===
+
+header {
+    background-image: 
+    linear-gradient(to right bottom, $light-blue-gradient, $blue-gradient), url(../img/bg.jpg);
+    background-position: top;
+    background-size: cover;
+    height: 90vh;
+    position: relative;
+    clip-path: ellipse(60% 60% at 50% 33%);
+
+    .header__logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+
+        width: 10rem;
+        height: 5rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .header__content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -80%);
+        text-align: center;
+        color: $text-white;
+
+        .main {
+            font-size: 5rem;
+            font-weight: 400;
+            letter-spacing: 1.2rem;
+            animation: left-to 2s;
+        }
+        .sub {
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: 1rem;
+            animation: right-to 2s;
+        }
+        
+        .header-btn {
+            background-color: $text-white;
+            color: $text-grey;
+            margin-top: 4rem;
+            position: relative;
+            animation: down-to 2s;
+        }
+        .header-btn::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: $text-white;
+            border-radius: 4rem;
+            
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            
+            transition: all 0.4s;
+        }
+        .header-btn:hover::after {
+        transform: scaleX(1.4) scaleY(1.5);
+        opacity: 0;
+        }
+    }
+}
+
+
+
+
