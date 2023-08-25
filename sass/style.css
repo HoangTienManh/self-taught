@@ -54,24 +54,6 @@ a {
     transform: translateX(0);
   }
 }
-.header__button {
-  margin-top: 4rem;
-  animation: down-to 2s;
-}
-
-.header__button:hover::after {
-  transform: scaleX(1.5) scaleY(1.6);
-  opacity: 0;
-}
-
-.header__button:hover {
-  transform: translateY(-3px);
-}
-
-.header__button:active {
-  transform: translateY(3px);
-}
-
 .button-link {
   padding: 1rem 2.5rem;
   border-radius: 4rem;
@@ -80,8 +62,8 @@ a {
   font-size: 1.2rem;
   display: inline-block;
   position: relative;
+  margin-top: 4rem;
 }
-
 .button-link::after {
   content: "";
   width: 100%;
@@ -93,6 +75,16 @@ a {
   border-radius: 4rem;
   z-index: -1;
   transition: all 0.4s;
+}
+.button-link:hover {
+  transform: translateY(-3px);
+}
+.button-link:active {
+  transform: translateY(3px);
+}
+.button-link:hover::after {
+  transform: scaleX(1.5) scaleY(1.6);
+  opacity: 0;
 }
 
 .header {
