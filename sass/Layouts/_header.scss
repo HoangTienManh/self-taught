@@ -43,3 +43,32 @@
         }
     }
 }
+
+@media only screen and (max-width: 1200px) {
+    
+    .main {
+        font-size: 4rem !important;
+        letter-spacing: 1rem !important;
+    }
+
+    .sub {
+        font-size: 1.4rem !important;
+        letter-spacing: 1rem !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header__logo {
+        width: 7rem;
+        height: 3.5rem;
+    }
+    .main {
+        font-size: 2.5rem !important;
+        letter-spacing: 0.2rem !important;
+    }
+
+    .sub {
+        font-size: 1rem !important;
+        letter-spacing: 0.2rem !important;
+    }
+} 

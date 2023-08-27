@@ -1,0 +1,20 @@
+@mixin flexbox($direction: row, $align: center, $justify: space-between) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin textgradient() {
+    background-image: linear-gradient(to right, $light-blue, $blue);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@mixin grid($cols: 4, $col-gap: 60px , $rows: 0, $row-gap: 0) {
+    display: grid;
+    grid-template-columns: repeat($cols, 1fr);
+    grid-template-rows: repeat($rows, 1fr);
+    column-gap: $col-gap;
+    row-gap: $row-gap;
+}

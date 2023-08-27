@@ -1,0 +1,46 @@
+.skill {
+    background-image:
+        linear-gradient(120deg, $light-blue-gradient,  $blue-gradient),
+        url("../../img/bg2.jpg");
+    background-size: cover;
+    background-position: center;
+    clip-path: ellipse(70% 50% at 50% 50%);
+    @include grid;
+    padding: 14rem 2rem;
+    margin: 4rem 0;
+    
+
+    &-item {
+        background-color: $bg-grey-gradient;
+        border-radius: 4rem;
+        text-align: center;
+        padding: 2rem 0 4rem;
+        transition: all 0.3s;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.04) translateY(-1rem);
+        }
+        i {
+            @include textgradient;
+            font-size: 4rem;
+        }
+        h3 {
+            padding: 1.2rem 1.8rem 0;
+        }
+        p {
+            padding: 1.2rem 1.8rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .skill {
+        @include grid(2, 30x, 2, 30px)
+    }
+}
+@media only screen and (max-width: 768px){
+    .skill {
+        @include grid(1, 0, 4, 30px)
+    }
+}

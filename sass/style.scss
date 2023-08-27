@@ -1,9 +1,15 @@
 @import "./Base/_reset.scss";
 @import "./Abstracts/variable";
+@import "./Abstracts/mixin";
 @import "./Abstracts/animation.scss";
-@import "./Components/button.scss";
-@import "./Layouts/header"
-
+@import "./Components/button-link.scss";
+@import "./Components/heading-section";
+@import "./Components/heading-item";
+@import "./Components/text";
+@import "./Layouts/header";
+@import "./Layouts/section-about-us";
+@import "./Layouts/section-skill";
+@import "./Layouts/container";
 
 // === end - GLOBAL ===
 
