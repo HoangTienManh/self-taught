@@ -25,12 +25,12 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -80%);
+        transform: translate(-50%, -50%);
         text-align: center;
         color: $text-white;
 
         .main {
-            font-size: 5rem;
+            font-size: 4.5rem;
             font-weight: 400;
             letter-spacing: 1.2rem;
             animation: left-to 2s;
