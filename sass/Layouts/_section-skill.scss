@@ -6,7 +6,7 @@
     background-position: center;
     clip-path: ellipse(70% 50% at 50% 50%);
     @include grid;
-    padding: 14rem 2rem;
+    padding: 12rem 2rem;
     margin: 4rem 0;
     
 
@@ -14,7 +14,7 @@
         background-color: $bg-grey-gradient;
         border-radius: 4rem;
         text-align: center;
-        padding: 2rem 0 4rem;
+        padding: 1.4rem 0 2rem;
         transition: all 0.3s;
         cursor: pointer;
 
