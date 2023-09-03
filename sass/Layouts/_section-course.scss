@@ -46,9 +46,16 @@
                         clip-path: ellipse(80% 70% at 50% 30%);
                     }
                     .img-1 {
+                        
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
                         background-image: url("../../img/card1.jpg")
                             // linear-gradient(to right, $light-orange, $orange),
                             // url("../../img/card1.jpg");
+                        
+                        
                     }
                     .img-2 {
                         background-image: url("../../img/card2.jpg")
