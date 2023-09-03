@@ -417,6 +417,11 @@ li {
   background-position: center;
   clip-path: ellipse(80% 70% at 50% 30%);
 }
+.course .course-content .card__side-front .check {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../img/card1.jpg");
+}
 .course .course-content .card__side-front .img-1 {
   background-image: url("../../img/card1.jpg");
 }
