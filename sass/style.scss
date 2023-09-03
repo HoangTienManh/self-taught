@@ -1,19 +1,14 @@
-@import "./Base/_reset.scss";
+@import "./Base/reset";
 @import "./Abstracts/variable";
 @import "./Abstracts/mixin";
-@import "./Abstracts/animation.scss";
-@import "./Components/button-link.scss";
+@import "./Abstracts/function";
+@import "./Abstracts/animation";
 @import "./Components/heading-section";
+@import "./Components/button-link";
 @import "./Components/heading-item";
 @import "./Components/text";
+@import "./Layouts/container";
 @import "./Layouts/header";
 @import "./Layouts/section-about-us";
 @import "./Layouts/section-skill";
-@import "./Layouts/container";
-
-// === end - GLOBAL ===
-
-
-
-
-
+@import "./Layouts/section-course";

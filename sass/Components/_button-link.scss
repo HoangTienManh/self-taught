@@ -8,7 +8,8 @@
     text-transform: uppercase;
     display: inline-block;
     position: relative;
-    margin-top: 4rem;
+    margin-top: 4rem; 
+    cursor: pointer;
 
     &::after {
         content: "";
@@ -44,4 +45,5 @@
         font-size: 1rem;
     }
 }
+
 
