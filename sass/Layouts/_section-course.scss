@@ -13,11 +13,11 @@
 
     .course-content {
         width: 100%;
-        @include grid(3, 6rem, 0, 0);
+        @include grid(3, 5rem, 0, 0);
         padding: 0 2rem;
 
         .card {
-            height: 34rem;
+            height: 30rem;
             border-radius: 3rem;
             overflow: hidden;
             position: relative;
@@ -47,17 +47,17 @@
                     }
                     .img-1 {
                         background-image: 
-                            linear-gradient(to right, $light-orange, $orange),
+                            // linear-gradient(to right, $light-orange, $orange),
                             url("../../img/card1.jpg");
                     }
                     .img-2 {
                         background-image:
-                            linear-gradient(to right, $light-blue, $blue),
+                            // linear-gradient(to right, $light-blue, $blue),
                             url("../../img/card2.jpg");
                     }
                     .img-3 {
                         background-image:
-                            linear-gradient(to right, $light-green, $green),
+                            // linear-gradient(to right, $light-green, $green),
                             url("../../img/card3.jpg");
                     }
 

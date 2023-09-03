@@ -385,12 +385,12 @@ li {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(0, 1fr);
-  column-gap: 6rem;
+  column-gap: 5rem;
   row-gap: 0;
   padding: 0 2rem;
 }
 .course .course-content .card {
-  height: 34rem;
+  height: 30rem;
   border-radius: 3rem;
   overflow: hidden;
   position: relative;
@@ -418,13 +418,13 @@ li {
   clip-path: ellipse(80% 70% at 50% 30%);
 }
 .course .course-content .card__side-front .img-1 {
-  background-image: linear-gradient(to right, #ffb900, #ff7730), url("../../img/card1.jpg");
+  background-image: url("../../img/card1.jpg");
 }
 .course .course-content .card__side-front .img-2 {
-  background-image: linear-gradient(to right, #8e9efc, #1c3eff), url("../../img/card2.jpg");
+  background-image: url("../../img/card2.jpg");
 }
 .course .course-content .card__side-front .img-3 {
-  background-image: linear-gradient(to right, #55c57a, #28b485), url("../../img/card3.jpg");
+  background-image: url("../../img/card3.jpg");
 }
 .course .course-content .card__side-front .tag {
   position: absolute;
