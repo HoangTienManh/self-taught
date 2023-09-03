@@ -11,7 +11,7 @@
         }
     }
 
-    &-content {
+    .course-content {
         width: 100%;
         @include grid(3, 6rem, 0, 0);
         padding: 0 2rem;
@@ -179,7 +179,7 @@
 
 @media screen and (max-width: 1200px) {
     .course {
-        &-content  {
+        .course-content  {
             @include grid(2, 2rem, 2, 2rem);
         }
 
