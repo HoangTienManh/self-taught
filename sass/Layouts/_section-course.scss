@@ -37,28 +37,28 @@
                 &-front {
                     background-color: $text-white;
                     transition: all 0.8s ease;                    
-                    // .img {
-                    //     width: 100%;
-                    //     height: 50%;
-                    //     background-blend-mode: screen;
-                    //     background-size: cover;
-                    //     background-position: center;
-                    //     clip-path: ellipse(80% 70% at 50% 30%);
-                    // }
+                    .img {
+                        width: 100%;
+                        height: 50%;
+                        background-blend-mode: screen;
+                        background-size: cover;
+                        background-position: center;
+                        clip-path: ellipse(80% 70% at 50% 30%);
+                    }
                     .img-1 {
-                        background-image: 
+                        background-image: url("../../img/card1.jpg")
                             // linear-gradient(to right, $light-orange, $orange),
-                            url("../../img/card1.jpg");
+                            // url("../../img/card1.jpg");
                     }
                     .img-2 {
-                        background-image:
+                        background-image: url("../../img/card2.jpg")
                             // linear-gradient(to right, $light-blue, $blue),
-                            url("../../img/card2.jpg");
+                            // url("../../img/card2.jpg");
                     }
                     .img-3 {
-                        background-image:
+                        background-image: url("../../img/card3.jpg")
                             // linear-gradient(to right, $light-green, $green),
-                            url("../../img/card3.jpg");
+                            // url("../../img/card3.jpg");
                     }
 
                     .tag {

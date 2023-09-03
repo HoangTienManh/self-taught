@@ -409,6 +409,14 @@ li {
   background-color: #fff;
   transition: all 0.8s ease;
 }
+.course .course-content .card__side-front .img {
+  width: 100%;
+  height: 50%;
+  background-blend-mode: screen;
+  background-size: cover;
+  background-position: center;
+  clip-path: ellipse(80% 70% at 50% 30%);
+}
 .course .course-content .card__side-front .img-1 {
   background-image: url("../../img/card1.jpg");
 }
