@@ -420,20 +420,16 @@ li {
 .course .course-content .card__side-front .check {
   width: 100%;
   height: 100%;
-  background-image: url("../../img/card1.jpg");
+  background-image: url("../img/card1.jpg");
 }
 .course .course-content .card__side-front .img-1 {
   background-image: url("../../img/card1.jpg");
 }
-.course .course-content .card__side-front .img-1 img {
-  width: 100%;
-  height: 100%;
-}
 .course .course-content .card__side-front .img-2 {
-  background-image: url("../../img/card2.jpg");
+  background-image: url("../img/card2.jpg");
 }
 .course .course-content .card__side-front .img-3 {
-  background-image: url("../../img/card3.jpg");
+  background-image: linear-gradient(to right, #55c57a, #28b485), url("../img/card3.jpg");
 }
 .course .course-content .card__side-front .tag {
   position: absolute;
